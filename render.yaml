@@ -1,7 +1,9 @@
 services:
 - type: web
-  name: nuxtjs-static
-  env: static
-  branch: static
-  buildCommand: yarn; yarn generate
-  staticPublishPath: dist
+  name: nuxt-js
+  env: node
+  plan: Custom 8 CPU / 16 GB RAM
+  buildCommand: yarn; yarn build
+  startCommand: yarn start
+  envVars:
+    - fromGroup: redash-shared-9zgb
