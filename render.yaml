@@ -2,7 +2,7 @@ services:
 - type: web
   name: nuxt-js
   env: node
-  plan: Custom 8 CPU / 16 GB RAM
+  plan: free
   buildCommand: yarn; yarn build
   startCommand: yarn start
   envVars:
